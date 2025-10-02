@@ -1,6 +1,9 @@
+import { readData } from "@/app/helper/utils";
+import { read } from "fs";
 import { NextResponse } from "next/server";
 
 export async function GET(params) {
-    return NextResponse.json({message:"hello from posts api"},{status:200})
+    const getdata = await readData();
+    return NextResponse.json(getdata,{status:200})
     
 }
