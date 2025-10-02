@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav  >
+        {/* <nav  >
           <ul className="flex gap-4 p-4 bg-gray-200">
             <li>
              <Link href="/">
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
               </Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         {children}
       </body>
     </html>
